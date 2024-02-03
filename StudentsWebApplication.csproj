@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Students\Create.cshtml" />
+    <Content Remove="Pages\Students\Index.cshtml" />
+    <Content Remove="Pages\Students\Update.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+	<!--<ItemGroup>
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+	</ItemGroup>-->
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="Pages\Students\Index.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="Pages\Students\Create.cshtml" />
+	  <_ContentIncludedByDefault Remove="Pages\Students\Index.cshtml" />
+	  <_ContentIncludedByDefault Remove="Pages\Students\Update.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Pages\Students\Create.cshtml" />
+	  <None Include="Pages\Students\Index.cshtml" />
+	  <None Include="Pages\Students\Update.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="Pages\Students\Create.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="Pages\Students\Update.cshtml" />
+	</ItemGroup>
+
+</Project>
